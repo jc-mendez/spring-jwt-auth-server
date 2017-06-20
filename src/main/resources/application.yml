@@ -1,0 +1,49 @@
+flyway:
+  schemas: oauth2
+
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5430/paycode_dev
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: postgres
+
+jwt:
+  privateKey: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEA9yI7iqGorYGNfUcuhNwJgEXg72UGdcBQ02VRDEPvI8dsE7PG
+    3C3bz4dPFAxRzJezHDfs03hkmDp2UezQS6iWWPJTlvqtCwRAtycJjxKKxdiOM3LL
+    530mTmJXLV5EbU981U4LWQhpjy7Ek1ZQIH4UsBR/qmQFVdvi78JwjfiB0blFiSJg
+    SAzJ7IVwtVzDaeYqBIsGh/uqNW43LsW2WaTSMFuJtOSCA34eowhFL/iRi3gwCc/W
+    AlP3g7BP0U/Te4CNsnscox6Y5UYvWY2qsPFRixQa7WwRUMsJeBCdyp2vj61Wgc2B
+    R5bn5mRawf50lHOIsoGDdm5Ns270ibQZWfSo/QIDAQABAoIBAQCjhIgHA03bd8QJ
+    p2aVTA4RTKs3Ww36LYSNSxVkWzLI5rORGbuzhbhSSUI+jqQ1Dg7Z1fsiNR/CRbRy
+    IpHz7ZmFQtmiJT0H9Alp5i+B9g/SNqZoTkWyZnFJHfJ2t0/pT9XWQSxq/ZDyx0wT
+    /OFJjoLbusR6FnIdTD+Myoe0uEAVZgdKZHCezycrufC0NwW5cpRtS40SxR6sK5I4
+    FmjYfww/vYC9fAjQP4VlS5rxZI1b3R7AkezHLhkuy4PcnKMDJCbb30QMJXPfXvW7
+    8xYM/rJlCU9RWsUqRmntl+AZT3EolS1v57YDjBO6bIj4a0xWE/fb+EAgb9jlOCX4
+    6oDJfozhAoGBAP1Iz/ON7vEzVNESOGGrQzGHC9Vcg7uBW1lWJ7cSqlHNEBYoTDo+
+    ppS6KI8X1F8lHq4/OF8QVHIeNI+guzZL8AkpPFTZ9HZsUwl97EZVRovc5/f+vpWC
+    2Md/F8pOAaySp1WsMXQ87XnW4gq0wL5Wzjva0Yav1uf00UFRoTZPuf5JAoGBAPnI
+    idqgvnkk3a/CXLuGTVtOZ09DxEsln4HH3ub9fZHpQYTCJ3KxVBKJ937mrXzcLwVM
+    CXlP4nYPMoqmGHxvBBfusuBNHTek3LUdz7lPphOUooy+1X7YNxrZWOdpFTX6Ye3L
+    bklMdqCcTz5pcVQ1XfLysKpu+DWeHbzAyCR7YGUVAoGAR359DG+c6cKmh1lQRulz
+    zxAim/hASvYpld8G2NtQ7kQm7Uo0siArH0Io3rNIRA8TSPYZcGQIoim6hmxFS/9F
+    YyCbogvfwGm1SrGbtwKtJh+V7t+eZk+H51ANpBI+0LqYt0sirn/gPIsWRRVebpvM
+    HQMYL5+E1va49moXSmBYzNkCgYBWNGmvNG7ILHr935xVc8Ja0rJA3uht7uwfxDUf
+    jzi5FMFx6ffnU1/qjgcGmuIhB3SK5XUXkwRbLl+JDk3BFCdbgxvk4XhF7fXl5AX+
+    tIhilZeL74iLIF/UOlK+ervBR0po4R6M2YDPaWLH7WgZYdmssSlbiLTM/GbS782j
+    GZlpCQKBgQDDILrGZ9uRtG+LW5sbBu4v6hGuzJkDxj3peKaJCZv6f0peVpJ+nG/m
+    Eao6PJwfbsIbui2yHj1d1dWZyBkLI9H44oFzDGzqA3pAznPrgojJoTZblXP+JjwT
+    cR++wntfb/RE+MhEQVXbjwpK60nSFec3bIbe01FKIsITup3/VotpPg==
+    -----END RSA PRIVATE KEY-----
+  publicKey: |
+    -----BEGIN PUBLIC KEY-----
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9yI7iqGorYGNfUcuhNwJ
+    gEXg72UGdcBQ02VRDEPvI8dsE7PG3C3bz4dPFAxRzJezHDfs03hkmDp2UezQS6iW
+    WPJTlvqtCwRAtycJjxKKxdiOM3LL530mTmJXLV5EbU981U4LWQhpjy7Ek1ZQIH4U
+    sBR/qmQFVdvi78JwjfiB0blFiSJgSAzJ7IVwtVzDaeYqBIsGh/uqNW43LsW2WaTS
+    MFuJtOSCA34eowhFL/iRi3gwCc/WAlP3g7BP0U/Te4CNsnscox6Y5UYvWY2qsPFR
+    ixQa7WwRUMsJeBCdyp2vj61Wgc2BR5bn5mRawf50lHOIsoGDdm5Ns270ibQZWfSo
+    /QIDAQAB
+    -----END PUBLIC KEY-----
